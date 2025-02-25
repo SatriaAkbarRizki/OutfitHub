@@ -22,6 +22,7 @@ class Mytheme {
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
           style: ElevatedButton.styleFrom(
+              overlayColor: Colors.transparent,
               foregroundColor: Colors.white,
               backgroundColor: Color(Colors.blueGrey.shade700.value))));
 }
