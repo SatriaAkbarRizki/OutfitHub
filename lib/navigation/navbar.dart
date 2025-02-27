@@ -6,10 +6,11 @@ import 'package:flutter_svg/svg.dart';
 import 'package:outfithub/riverpod/navbar_state.dart';
 import 'package:outfithub/screen/cart.dart';
 import 'package:outfithub/screen/home.dart';
+import 'package:outfithub/screen/profile.dart';
 
 class Navbar extends ConsumerWidget {
   static String routeName = "/navBar";
-  final List listScreen = [HomeScreen(), CartScreen()];
+  final List listScreen = [HomeScreen(), CartScreen(), ProfileScreen()];
 
   Navbar({super.key});
 
@@ -71,7 +72,7 @@ class Navbar extends ConsumerWidget {
                           Container(
                               width: 40,
                               height: 40,
-                              margin: EdgeInsets.only(left: 3, top: 5),
+                              margin: EdgeInsets.only(left: 3, top: 2),
                               decoration: valueCurrentIndexNav == 1
                                   ? BoxDecoration(
                                       color: Colors.orange,
