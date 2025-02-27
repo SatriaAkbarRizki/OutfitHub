@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TitleHomeWidget extends StatelessWidget {
-  const TitleHomeWidget({super.key});
+class TitleCartWidget extends StatelessWidget {
+  const TitleCartWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -9,7 +9,7 @@ class TitleHomeWidget extends StatelessWidget {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
-          "OutfitHub",
+          "Cart",
           style: Theme.of(context).textTheme.bodyLarge,
         ),
         Text(
