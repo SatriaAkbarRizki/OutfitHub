@@ -13,7 +13,7 @@ class TitleCartWidget extends StatelessWidget {
           style: Theme.of(context).textTheme.bodyLarge,
         ),
         Text(
-          "Find your? match style!",
+          "Clothing On Delivery, Enjoy Shopping",
           style: Theme.of(context).textTheme.bodyMedium,
         ),
       ],
