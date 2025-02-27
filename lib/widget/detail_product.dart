@@ -15,7 +15,7 @@ class DetailProduct extends StatelessWidget {
             ClipRRect(
               borderRadius: BorderRadius.circular(20),
               child: SizedBox(
-                height: MediaQuery.of(context).size.height / 1.5,
+                height: MediaQuery.of(context).size.height / 1.8,
                 child: Image.asset(
                   "assets/image/Black Slim Fit Dress.jpg",
                   width: double.infinity,

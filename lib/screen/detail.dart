@@ -17,6 +17,33 @@ class DetailScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               DetailProduct(),
+              Container(
+                margin: EdgeInsets.only(top: 50),
+                child: SizedBox(
+                  height: 50,
+                  child: ListView.builder(
+                    itemCount: 5,
+                    scrollDirection: Axis.horizontal,
+                    itemBuilder: (context, index) => Padding(
+                      padding: const EdgeInsets.only(right: 5),
+                      child: ElevatedButton(
+                        onPressed: () {},
+                        child: Text("XL"),
+                        style: Theme.of(context)
+                            .elevatedButtonTheme
+                            .style
+                            ?.copyWith(
+                                fixedSize: WidgetStatePropertyAll(Size(80, 30)),
+                                shape: WidgetStatePropertyAll(
+                                    RoundedRectangleBorder(
+                                  // Change your radius here
+                                  borderRadius: BorderRadius.circular(12),
+                                ))),
+                      ),
+                    ),
+                  ),
+                ),
+              ),
               ButtonDetail()
             ],
           ),
