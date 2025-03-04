@@ -6,7 +6,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:outfithub/riverpod/navbar_state.dart';
 import 'package:outfithub/screen/cart.dart';
 import 'package:outfithub/screen/home.dart';
-import 'package:outfithub/screen/profile.dart';
+import 'package:outfithub/screen/settings/profile.dart';
 
 class Navbar extends ConsumerWidget {
   static String routeName = "/navBar";
