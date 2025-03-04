@@ -41,7 +41,7 @@ class FormSignup extends StatelessWidget {
               prefixIcon: Padding(
                 padding: const EdgeInsets.all(10),
                 child: SvgPicture.asset(
-                  "assets/Icons/lock.svg",
+                  "assets/Icons/phone.svg",
                   width: 10,
                   colorFilter:
                       ColorFilter.mode(Colors.grey.shade600, BlendMode.srcIn),
