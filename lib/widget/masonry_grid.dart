@@ -2,13 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
+import 'package:outfithub/datadump/datadump.dart';
 import 'package:outfithub/screen/detail.dart';
 
 class MasonryGridWidget extends StatelessWidget {
-  final List<String> images = [
-    "assets/image/Black Slim Fit Dress.jpg",
-    "assets/image/Black Wash Straight Leg Jeans.jpg"
-  ];
+
 
   MasonryGridWidget({super.key});
 
@@ -31,7 +29,8 @@ class MasonryGridWidget extends StatelessWidget {
                 child: Stack(
                   children: [
                     Image.asset(
-                      images[index % images.length],
+                      DataDump
+                          .listOutfit[index % DataDump.listOutfit.length].image,
                       filterQuality: FilterQuality.medium,
                     ),
                     Align(
@@ -53,7 +52,7 @@ class MasonryGridWidget extends StatelessWidget {
               ),
             ),
             Text(
-              "Shirt Black Awesome and Minimalist Modern",
+              DataDump.listOutfit[index % DataDump.listOutfit.length].name,
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
               style: Theme.of(context)
